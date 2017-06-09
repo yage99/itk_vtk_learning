@@ -1,0 +1,36 @@
+
+main.cxx,1814
+/*TImageType::Pointer*/void ReadImage(24,510
+  typedef TImageType ImageType;26,607
+  typedef itk::ImageFileReader< ImageType > ImageReaderType;27,640
+void matrixManipulation(48,1104
+  typedef double OPixelType;52,1287
+  typedef itk::Image< OPixelType, 2 > OImageType;53,1317
+  typedef itk::CastImageFilter< TImageType, OImageType > CastFilterType;54,1368
+  typedef vnl_matrix< OPixelType > MatrixType;63,1678
+  typedef itk::ImportImageFilter< OPixelType, 2 > ImportFilterType;74,2123
+  typedef itk::ImageFileWriter< OImageType> WriterType;80,2452
+void filterMultiplcation(92,2781
+  typedef itk::MultiplyImageFilter<TImageType, TImageType> FilterType;96,2965
+  typedef itk::ImageFileWriter<TImageType> WriterType;104,3241
+int main(111,3442
+          typedef unsigned char 151,4535
+          typedef itk::Image<PixelType, 2> ImageType;152,4579
+          typedef char PixelType;173,5179
+          typedef itk::Image<PixelType, 2> ImageType;174,5214
+          typedef unsigned short 195,5806
+          typedef itk::Image<PixelType, 2> ImageType;196,5851
+          typedef short PixelType;217,6442
+          typedef itk::Image<PixelType, 2> ImageType;218,6478
+          typedef unsigned int 239,7068
+          typedef itk::Image<PixelType, 2> ImageType;240,7111
+          typedef int PixelType;261,7700
+          typedef itk::Image<PixelType, 2> ImageType;262,7734
+          typedef unsigned long 283,8325
+          typedef itk::Image<PixelType, 2> ImageType;284,8369
+          typedef long PixelType;305,8959
+          typedef itk::Image<PixelType, 2> ImageType;306,8994
+          typedef float PixelType;327,9585
+          typedef itk::Image<PixelType, 2> ImageType;328,9621
+          typedef double PixelType;349,10213
+          typedef itk::Image<PixelType, 2> ImageType;350,10250
